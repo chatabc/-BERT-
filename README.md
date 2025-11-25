@@ -13,27 +13,34 @@
 - **业务导向**: 精准识别5类常见诈骗话术（如冒充公检法、冒充领导熟人等），紧扣风控业务需求。
 
 ## 📁 项目结构
-bert-telecom-fraud-detection/
 
-├── model/ # 模型训练模块
+基于Bert的诈骗电话识别/
 
-│ ├── train.py # 模型训练脚本
+├── 🤖 zhapian/                    # 【核心】模型训练与数据处理模块
 
-│ ├── preprocess.py # 数据预处理脚本
+│   ├── Bert.py                    # BERT模型微调训练脚本
 
-│ └── ...
+│   ├── contact_csv.py             # 数据预处理：原始数据拼接与打乱
 
-├── app/ # 应用部署模块
+│   ├── data_telecom.csv           # 处理后的最终训练数据集
 
-│ ├── predict_flask.py # Flask API 服务
+│   ├── predict_flask_2.py         # 【关键】Flask API服务，连接模型与前端
 
-│ └── ...
+│   └── bert_telecom_model.pth     # 训练好的模型权重文件 (请确认是否已上传)
 
-├── data/ # 数据目录（样例）
+│
 
-├── requirements.txt # 项目依赖
+├── 🎤 XFASRDemo-master/           # 【前端】语音识别演示模块
 
-└── README.md # 项目说明
+│   └── ...                        # 语音识别前端源码，用于捕获实时音频
+
+│
+
+├── 📄 requirements.txt            # 项目Python环境依赖列表 (建议创建)
+
+├── 📊 results/                    # 训练日志、性能图表等 (可选)
+
+└── README.md                      # 您正在阅读的项目说明
 
 ## ⚙️ 环境依赖
 首先，安装所需的Python库：
