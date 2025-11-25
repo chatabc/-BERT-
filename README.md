@@ -36,7 +36,7 @@ cd model
 
 python train.py
 
-4. 启动API服务
+2. 启动API服务
 
 cd app
 
@@ -44,7 +44,7 @@ python predict_flask.py
 
 服务启动后，默认位于 http://localhost:5000。
 
-7. 实时演示
+3. 实时演示
 
 连接并运行 XFASRDemo-master 前端项目，即可进行实时语音欺诈检测。
 
