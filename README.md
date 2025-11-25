@@ -31,14 +31,21 @@ pip install -r requirements.txt
 
 ## 🛠️ 如何使用
 1. 模型训练
+
 cd model
+
 python train.py
-2. 启动API服务
+
+4. 启动API服务
+
 cd app
+
 python predict_flask.py
+
 服务启动后，默认位于 http://localhost:5000。
 
-3. 实时演示
+7. 实时演示
+
 连接并运行 XFASRDemo-master 前端项目，即可进行实时语音欺诈检测。
 
 ## 📊 模型性能
